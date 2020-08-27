@@ -46,7 +46,7 @@ ConfiguredServos$methods(
       servos[[pin_name]] <<- servo
     } else {
       # If it exists, move it to the provided initial_value.
-      servo@servo$value <- initial_value
+      set_position(servo, initial_value)
     }
     servo
   }

@@ -34,7 +34,7 @@ servo <- get_servo(14)
 set_position(servo, 1)
 # Move the servo to its minimum position.
 set_position(servo, -1)
-# Move the servo to its midium position.
+# Move the servo to its medium position.
 set_position(servo, 0)
 }
 
