@@ -2,9 +2,12 @@
 % Please edit documentation in R/set_position.R
 \name{set_position}
 \alias{set_position}
+\alias{set_position,Servo-method}
 \title{Set the position of a servo instance.}
 \usage{
 set_position(x, value)
+
+\S4method{set_position}{Servo}(x, value)
 }
 \arguments{
 \item{x}{A Servo instance.}
@@ -18,6 +21,11 @@ The same Servo instance provided as input.
 \description{
 Sets the position of a given servo instance.
 }
+\section{Methods (by class)}{
+\itemize{
+\item \code{Servo}: 
+}}
+
 \examples{
 \dontrun{
 # Get a servo instance.
