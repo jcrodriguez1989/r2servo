@@ -12,6 +12,6 @@ Servo Class Representation.
 \describe{
 \item{\code{pin}}{The servo's assigned pin.}
 
-\item{\code{servo}}{The internal representatio of the servo.}
+\item{\code{servo}}{The internal representation of the servo.}
 }}
 

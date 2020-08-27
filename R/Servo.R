@@ -1,7 +1,7 @@
 #' Servo Class Representation.
 #'
 #' @slot pin The servo's assigned pin.
-#' @slot servo The internal representatio of the servo.
+#' @slot servo The internal representation of the servo.
 #'
 #' @importFrom methods setClass
 #'
