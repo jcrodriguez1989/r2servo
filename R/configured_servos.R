@@ -15,7 +15,13 @@ config_servo <- function(pin, initial_value) {
   # Import the gpiozero Python library.
   gpiozero <- import("gpiozero")
   # Create the servo Python instance.
-  gpiozero$Servo(pin = as.integer(pin), initial_value = initial_value)
+  gpiozero$Servo(
+    pin = as.integer(pin),
+    initial_value = initial_value,
+    # If this is not provided, then my servos start juddering:
+    # https://www.raspberrypi.org/forums/viewtopic.php?t=174324
+    pin_factory = gpiozero$pins$pigpio$PiGPIOFactory()
+  )
 }
 
 # Set ConfiguredServos methods.
@@ -42,8 +48,6 @@ ConfiguredServos$methods(
       # If it exists, move it to the provided initial_value.
       servo@servo$value <- initial_value
     }
-    # Set value to NULL, to stop crazy moving.
-    servo@servo$value <- NULL
     servo
   }
 )
