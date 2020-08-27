@@ -6,7 +6,7 @@
 #' @param value A numeric of length one. The new position of the servo as a
 #'   value between -1 (the minimum position) and +1 (the maximum position).
 #'
-#' @return A Servo instance with the new position.
+#' @return The same Servo instance provided as input.
 #'
 #' @examples
 #' \dontrun{

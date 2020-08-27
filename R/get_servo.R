@@ -13,12 +13,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' # If just one sensor connected, this would be the normal use case.
-#' sensor <- get_ds18b20_sensor()
-#'
-#' # If two sensors connected, say "28-0300a2790676" and "28-0300a0881918".
-#' sensor_1 <- get_ds18b20_sensor("28-0300a2790676")
-#' sensor_2 <- get_ds18b20_sensor("28-0300a0881918")
+#' # Get a servo instance connected at GPIO 14.
+#' servo_14 <- get_servo(14)
+#' # Get a servo instance connected at GPIO 18.
+#' servo_18 <- get_servo(18)
 #' }
 #'
 #' @export

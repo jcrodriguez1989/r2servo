@@ -13,7 +13,7 @@ set_position(x, value)
 value between -1 (the minimum position) and +1 (the maximum position).}
 }
 \value{
-A Servo instance with the new position.
+The same Servo instance provided as input.
 }
 \description{
 Sets the position of a given servo instance.
