@@ -26,6 +26,7 @@ ConfiguredServos$methods(
   #   servo is connected to.
   # @param initial_value A numeric of length one. Values between -1 and +1 can
   #   be specified as an initial position.
+  #' @importFrom methods new
   get_servo = function(pin, initial_value) {
     # Try to get the configured servo.
     pin_name <- as.character(pin)

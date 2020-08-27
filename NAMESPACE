@@ -2,5 +2,7 @@
 
 export(get_servo)
 export(set_position)
+exportMethods(set_position)
+importFrom(methods,new)
 importFrom(methods,setClass)
 importFrom(reticulate,import)
