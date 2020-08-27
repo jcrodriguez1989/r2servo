@@ -29,7 +29,7 @@ setGeneric("set_position", function(x, value) standardGeneric("set_position"))
 #' @export
 #'
 setMethod("set_position", "Servo", function(x, value) {
-  if (!is.null(value) || value < -1 || 1 < value)
+  if (!(is.null(value) || (-1 <= value && value <= 1)))
     stop("`value` should be NULL or between -1 and +1")
   x@servo$value <- value
   invisible(x)
