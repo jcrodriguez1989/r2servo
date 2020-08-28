@@ -13,7 +13,7 @@ get_position(x)
 \item{x}{A Servo instance.}
 }
 \value{
-A length-one numeric with the actual position of the servo.
+A numeric of length one with the actual position of the servo.
 }
 \description{
 Gets the position of a given servo instance.
