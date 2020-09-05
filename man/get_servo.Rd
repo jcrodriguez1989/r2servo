@@ -12,7 +12,7 @@ servo is connected to.}
 
 \item{initial_value}{A numeric of length one. If 0 (the default), the
 device's mid-point will be set initially. Other values between -1 and +1
-can be specified as an initial position. If NULL, it will not move.}
+can be specified as an initial position. If `NULL`, it will not move.}
 }
 \value{
 A Servo S4 object, this object will be set to work with the
