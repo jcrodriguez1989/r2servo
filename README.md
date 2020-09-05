@@ -12,6 +12,9 @@ Control your Raspberry Pi’s servo from R.
 **Note:** This package and README was only tested with the SG90 servo
 motor.
 
+**Acknowledgments:** This package imports the
+[gpiozero](https://gpiozero.readthedocs.io/) Python library.
+
 ## Installation
 
 `r2servo` is currently only available as a GitHub package.
@@ -29,8 +32,8 @@ remotes::install_github("jcrodriguez1989/r2servo", dependencies = TRUE)
 
 ### Servo Connection
 
-Please make sure that you servo is correctly connected to your Raspberry
-Pi. Take note to which GPIO pin is your servo connected.
+Please make sure that your servo is correctly connected to your
+Raspberry Pi. Take note to which GPIO pin is your servo connected.
 
 ## Usage
 
